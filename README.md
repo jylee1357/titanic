@@ -31,33 +31,12 @@
      + When hidden layer size = (10,10,10) & max_iter = 60, accuracy turned out to be the highest.
      <img width="815" alt="Screen Shot 2022-06-15 at 8 51 29 PM" src="https://user-images.githubusercontent.com/98932859/173820669-724b65cd-0f11-49bd-97de-ea0f14ee4dce.png">
 
-    
-* Model Performance  
-    <img width="515" alt="Screen Shot 2022-06-14 at 10 33 59 PM" src="https://user-images.githubusercontent.com/98932859/173589965-90edb809-bac9-4fcf-8ad9-f9da33993e9e.png">  
-      |Model|Accuracy|
-    |------|---|
-    |Decision Tree|0.986|
-    |Random Forest Classifier|0.984|
-    |Logistic Regression|0.981|
-    |Neural Network|0.950|
-* Model Performance after K-fold cross validation    
-     |Model (with CV)|Accuracy|
-    |------|---|
-    |Decision Tree|0.986 → 0.989|
-    |Random Forest Classifier|0.984 → 0.982|
-    |Logistic Regression|0.981 → 0.978|
-    |Neural Network|0.950 → 0.950| 
 ### 📍 Takeaway
 * Feature Importance  
-  <img width="711" alt="Screen Shot 2022-06-14 at 10 41 48 PM" src="https://user-images.githubusercontent.com/98932859/173591712-085e8c51-8189-44bd-8099-acbd8daa0306.png">
-  - 'function' (your role in the company)
-  - 'industry' (type of industry)
-  - 'has_company_logo' (whether the company has a logo or not)
-  - 'benefits' (incentives that company provides)
-  - 'department' (department in a company)
-* Limitations  
-
-  - Since only four percent of the dataset were from actual fake job postings, the target variable was not enough
-  - Could not perform sentiment analysis on textual data (with sentiment analaysis the result might have been different)
-
-
+  - In feature importance, 1st: 'Sex' 2nd: 'Age' 3rd: 'Pclass' 4th: 'Sibsp'
+  - 74% of female survied and only 18% of male survived
+  - Age 0-5 showed the highest survival rate followed by Age 50-65
+     + It could be clearly seen that the children and elders escaped first
+  - Pclass = 1 (62.9%), Pclass = 2 (47.2%), Pclass = 3 (24.2%) → survival rate of each class
+     + Pclass = 1 was like the first class at that time and there were a significant number of important figures in pclass = 1
+     
