@@ -38,5 +38,5 @@
   - Age 0-5 showed the highest survival rate followed by Age 50-65
      + It could be clearly seen that the children and elders escaped first
   - Pclass = 1 (62.9%), Pclass = 2 (47.2%), Pclass = 3 (24.2%) → survival rate of each class
-     + Pclass = 1 was like the first class at that time and there were a significant number of important figures in pclass = 1
+     + Pclass = 1 was similar to the first class at that time and there were a significant number of important figures in pclass = 1
      
