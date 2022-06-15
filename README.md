@@ -21,21 +21,16 @@
   - 'sex', 'embarked' → Since they are categorical variables, I used one-hot encoder to transform them
   - 'fare' → Based on the fare, I separated them into multiple bins and created new variable called 'fare binned'
   - Based on passenger's honorifics (Mr/Mrs/Miss/Doctor), mean age was calculated to replace the null values in 'age' column 
-* Kaggle dataset explanation   
-  - Used 'fake_job_postings.csv' on Kaggle
-  - Data based on 866 fake job postings
-  - 16 independent variables & 1 dependent variable ('Fraudulent')
-* Preprocessing (여기서부터 수정)
-  - Through one-hot encoder, I transformed categorical variables ('location', 'employment type', 'required experience', 'required education')
-     <img width="969" alt="Screen Shot 2022-06-14 at 10 27 53 PM" src="https://user-images.githubusercontent.com/98932859/173588765-d0a5d360-f72f-4aca-b84b-e07a50de586c.png">
-  - Preprocessed Textual Data
-     + ‘title’, ‘benefits’, ‘descriptions’, ‘company profile’, ‘function’, ‘industry’, ‘department’, ‘requirements’, ‘benefits’
-     + Using simple imputer, null values were removed 
-    
+
 ### ⌨️ Models
 * Model
-  - Train set: 75%, Test set: 25%
-  - Logisitic Regression, Decision Tree, Random Forest Classifier, Neural Network were the selected models
+  - Multi-Layer Perceptron
+     <img width="814" alt="Screen Shot 2022-06-15 at 8 48 52 PM" src="https://user-images.githubusercontent.com/98932859/173820254-1a4e3fff-05b3-4454-8afb-fa3ffec85413.png">
+
+  - Grid SearchCV
+     + When hidden layer size = (10,10,10) & max_iter = 60, accuracy turned out to be the highest.
+     <img width="815" alt="Screen Shot 2022-06-15 at 8 51 29 PM" src="https://user-images.githubusercontent.com/98932859/173820669-724b65cd-0f11-49bd-97de-ea0f14ee4dce.png">
+
     
 * Model Performance  
     <img width="515" alt="Screen Shot 2022-06-14 at 10 33 59 PM" src="https://user-images.githubusercontent.com/98932859/173589965-90edb809-bac9-4fcf-8ad9-f9da33993e9e.png">  
